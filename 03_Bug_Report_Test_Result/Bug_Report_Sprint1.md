@@ -2,7 +2,7 @@
 ## Aplikasi Penjualan Kursi Online "KursiKita"
 
 **Periode:** 1 - 10 Maret 2025  
-**Penguji:** Tim SQA Kelompok 1  
+**Penguji:** Tim SQA Kelompok 17
 **Sprint:** 1
 
 ---
