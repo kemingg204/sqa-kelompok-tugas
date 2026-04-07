@@ -3,7 +3,7 @@
 
 **Versi:** 1.0  
 **Tanggal:** 10 Maret 2025  
-**Penulis:** Tim SQA Kelompok 1
+**Penulis:** Tim SQA Kelompok 17
 
 ---
 
