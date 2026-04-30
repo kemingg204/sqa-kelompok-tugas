@@ -7,58 +7,93 @@
 
 1. Entity Relationship Diagram (ERD)
 2. Use Case Diagram
-3. Activity Diagram (Transaksi)
+3. Activity Diagram
 4. Class Diagram
-5. Sequence Diagram (Login & Transaksi)
+5. Sequence Diagram
 6. UI Mockup
 
 ---
 
 ## BAB 1: ENTITY RELATIONSHIP DIAGRAM (ERD)
 
-```mermaid
-erDiagram
-    users ||--o{ transaksi : melakukan
-    users {
-        int id PK
-        string username
-        string password
-        string email
-        string nama_lengkap
-        enum role
-    }
-    
-    transaksi ||--|{ detail_transaksi : memiliki
-    transaksi {
-        int id PK
-        string no_invoice
-        datetime tanggal
-        int user_id FK
-        string customer_name
-        int grand_total
-        int bayar
-        enum payment_method
-        enum status
-    }
-    
-    detail_transaksi }o--|| kursi : berisi
-    detail_transaksi {
-        int id PK
-        int transaksi_id FK
-        int kursi_id FK
-        int jumlah
-        int harga_jual
-        int subtotal
-    }
-    
-    kursi {
-        int id PK
-        string kode_kursi
-        string nama_kursi
-        string kategori
-        int harga
-        int stok
-        int berat_kg
-        string deskripsi
-        string warna
-    }
+![ERD Diagram](https://i.imgur.com/5qjZ7SM.png)
+
+*Gambar 1. ERD Sistem Penjualan Kursi CV Rofile Chetose*
+
+---
+
+## BAB 2: USE CASE DIAGRAM
+
+![Use Case Diagram](https://i.imgur.com/F4pQhZu.png)
+
+*Gambar 2. Use Case Diagram dengan 4 role (Admin, Manager, Kasir, Staff)*
+
+---
+
+## BAB 3: ACTIVITY DIAGRAM (Transaksi Penjualan)
+
+![Activity Diagram](https://i.imgur.com/8YxqL2j.png)
+
+*Gambar 3. Activity Diagram Transaksi Cash, Debit, dan QRIS*
+
+---
+
+## BAB 4: CLASS DIAGRAM
+
+![Class Diagram](https://i.imgur.com/VxK3p9c.png)
+
+*Gambar 4. Class Diagram User, Kursi, Transaksi, DetailTransaksi*
+
+---
+
+## BAB 5: SEQUENCE DIAGRAM
+
+### Sequence Diagram Login
+
+![Sequence Diagram Login](https://i.imgur.com/NPk7c2m.png)
+
+### Sequence Diagram Transaksi
+
+![Sequence Diagram Transaksi](https://i.imgur.com/QwXyZ1a.png)
+
+---
+
+## BAB 6: UI MOCKUP
+
+### 6.1 Halaman Login
+- Form input username dan password
+- Tombol login
+
+### 6.2 Dashboard Admin
+- Tabel daftar kursi
+- Tombol Tambah, Edit, Hapus
+- Pencarian dan filter kategori
+
+### 6.3 Halaman Kasir
+- Daftar kursi yang tersedia
+- Keranjang belanja
+- Pilihan metode bayar (Cash, Debit, QRIS)
+
+### 6.4 Dashboard Manager
+- Grafik penjualan (line chart)
+- Filter periode (hari/minggu/bulan)
+- Tombol export Excel dan PDF
+
+### 6.5 Halaman Staff
+- Tabel stok kursi (read only)
+- Pencarian kursi
+
+---
+
+## BAB 7: KOMPONEN TEKNOLOGI
+
+| Komponen | Teknologi |
+|----------|-----------|
+| Backend | PHP 8.2 |
+| Database | MySQL 8.0 |
+| Frontend | Bootstrap 5 |
+| API | REST API |
+
+---
+
+**Dokumen ini bersumber dari SKPL CV Rofile Chetose**
