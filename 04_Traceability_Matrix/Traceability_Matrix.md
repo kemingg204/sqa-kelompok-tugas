@@ -1,33 +1,37 @@
-# Traceability Matrix
-## Aplikasi Penjualan Kursi Online "KursiKita"
-
-**Versi:** 1.0  
-**Tanggal:** 10 Maret 2025  
-**Penulis:** Tim SQA Kelompok 17
+# Traceability Matrix (RTM)
+## CV Rofile Chetose - Sistem Penjualan Kursi
 
 ---
 
-## Matriks Ketertelusuran
+## Matriks Ketertelusuran (Requirement → Test Case)
 
-| Req ID | Requirement Description | Test Case ID | Bug ID | Status Coverage |
-|--------|------------------------|--------------|--------|-----------------|
-| FR-01-01 | Pelanggan dapat registrasi | TC-REG-01-01 | - | ✅ Covered |
-| FR-01-02 | Sistem verifikasi email | TC-REG-01-01 | BUG-KRS-001 | ✅ Covered |
-| FR-01-03 | Pelanggan dapat login | TC-LOGIN-01-01 | - | ✅ Covered |
-| FR-01-04 | Gagal login jika password salah | TC-LOGIN-01-02 | - | ✅ Covered |
-| FR-02-01 | Sistem tampilkan daftar kursi | TC-PRODUK-01-01 | - | ✅ Covered |
-| FR-02-02 | Pelanggan dapat mencari kursi | TC-PRODUK-01-02 | - | ✅ Covered |
-| FR-02-03 | Pelanggan dapat filter kategori | TC-PRODUK-01-03 | BUG-KRS-004 | ✅ Covered |
-| FR-03-01 | Pelanggan dapat tambah ke keranjang | TC-CART-01-01 | - | ✅ Covered |
-| FR-03-02 | Sistem validasi stok | TC-CART-01-02 | - | ✅ Covered |
-| FR-04-01 | Sistem tampilkan ringkasan order | TC-CHECKOUT-01-01 | - | ✅ Covered |
-| FR-04-02 | Pelanggan pilih metode pembayaran | TC-CHECKOUT-01-01, TC-CHECKOUT-01-02 | - | ✅ Covered |
-| FR-04-03 | Sistem simpan pesanan | TC-CHECKOUT-01-01 | - | ✅ Covered |
-| FR-05-01 | Admin dapat verifikasi pembayaran | TC-ADMIN-01-01 | - | ✅ Covered |
-| FR-06-01 | Pelanggan dapat ajukan retur | TC-RETUR-01-01 | BUG-KRS-003 | ✅ Covered |
-| FR-06-02 | Batas waktu retur 14 hari | TC-RETUR-01-02 | - | ✅ Covered |
-| FR-07-01 | Admin dapat lihat laporan | TC-LAPORAN-01-01 | BUG-KRS-005 | ✅ Covered |
-| FR-07-02 | Owner dapat lihat laporan stok | TC-LAPORAN-01-02 | - | ⚠️ Not Yet |
+| ID Requirement | Deskripsi | Test Case | Status |
+|----------------|-----------|-----------|--------|
+| F-01 | Login | TC_Login.md | ✅ Covered |
+| F-02 | Logout | TC_Login.md | ✅ Covered |
+| F-03 | Role-based Access (4 role) | TC_Login.md | ✅ Covered |
+| F-04 | Tampil Kursi | TC_Kelola_Kursi.md (TC-KURSUS-04) | ✅ Covered |
+| F-05 | Tambah Kursi | TC_Kelola_Kursi.md (TC-KURSUS-01) | ✅ Covered |
+| F-06 | Edit Kursi | TC_Kelola_Kursi.md (TC-KURSUS-02) | ✅ Covered |
+| F-07 | Hapus Kursi | TC_Kelola_Kursi.md (TC-KURSUS-03) | ✅ Covered |
+| F-08 | Transaksi Cash | TC_Transaksi.md (TC-TR-01) | ✅ Covered |
+| F-09 | Transaksi Debit | TC_Transaksi.md (TC-TR-02) | ✅ Covered |
+| F-10 | Transaksi QRIS | TC_Transaksi.md (TC-TR-03) | ✅ Covered |
+| F-11 | Update Stok Otomatis | TC_Transaksi.md (TC-TR-01, TC-TR-04) | ✅ Covered |
+| F-12 | Riwayat Penjualan | Belum ada test case | ❌ Not Yet |
+| F-13 | Grafik Penjualan | Belum ada test case | ❌ Not Yet |
+| F-14 | Export Excel | Belum ada test case | ❌ Not Yet |
+| F-15 | Export PDF | Belum ada test case | ❌ Not Yet |
+
+---
+
+## Matriks Test Case → Bug
+
+| Test Case | Bug ID | Status |
+|-----------|--------|--------|
+| TC_Login.md (TC-01 s/d TC-04) | BUG-001 | Open |
+| TC_Transaksi.md (TC-TR-04) | - | Pending |
+| TC_Transaksi.md (TC-TR-05) | - | Pending |
 
 ---
 
@@ -35,26 +39,20 @@
 
 | Keterangan | Jumlah |
 |------------|--------|
-| Total Functional Requirements | 17 |
-| Covered by Test Case | 16 |
-| Not Yet Covered | 1 |
-| **Coverage Percentage** | **94.1%** |
-
-| Bug ID | Req ID Terkait | Status |
-|--------|---------------|--------|
-| BUG-KRS-001 | FR-01-02 | Open |
-| BUG-KRS-002 | FR-03-02 | In Progress |
-| BUG-KRS-003 | FR-06-01 | Open |
-| BUG-KRS-004 | FR-02-03 | Open |
-| BUG-KRS-005 | FR-07-01 | Fixed |
+| Total Requirement | 15 |
+| Covered | 11 |
+| Not Covered | 4 |
+| **Coverage Percentage** | **73.3%** |
 
 ---
 
 ## Rekomendasi
 
-Berdasarkan traceability matrix di atas, direkomendasikan:
+1. Buat test case untuk requirement F-12 (Riwayat Penjualan)
+2. Buat test case untuk requirement F-13 (Grafik Penjualan)
+3. Buat test case untuk requirement F-14 & F-15 (Export Excel/PDF)
+4. Perbaiki bug BUG-001 (Login kasir gagal)
 
-1. ✅ Semua requirement utama sudah memiliki test case
-2. ⚠️ Requirement FR-07-02 perlu segera dibuat test case-nya
-3. 🔴 Bug BUG-KRS-001 dan BUG-KRS-002 harus diprioritaskan karena menghambat fungsi utama
-4. 📊 Coverage 94.1% sudah baik, target 100% di sprint berikutnya
+---
+
+**Terakhir diupdate:** 30 April 2026
