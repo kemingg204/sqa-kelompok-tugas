@@ -32,7 +32,7 @@
 
 ## BAB 3: ACTIVITY DIAGRAM (Transaksi Penjualan)
 
-![Activity Diagram](https://i.imgur.com/8YxqL2j.png)
+![Screenshot Error Login](../screenshots/Activity Diagram.PNG)
 
 *Gambar 3. Activity Diagram Transaksi Cash, Debit, dan QRIS*
 
@@ -40,7 +40,7 @@
 
 ## BAB 4: CLASS DIAGRAM
 
-![Class Diagram](https://i.imgur.com/VxK3p9c.png)
+![Screenshot Error Login](../screenshots/class_diagram.PNG)
 
 *Gambar 4. Class Diagram User, Kursi, Transaksi, DetailTransaksi*
 
@@ -50,11 +50,7 @@
 
 ### Sequence Diagram Login
 
-![Sequence Diagram Login](https://i.imgur.com/NPk7c2m.png)
-
-### Sequence Diagram Transaksi
-
-![Sequence Diagram Transaksi](https://i.imgur.com/QwXyZ1a.png)
+![Screenshot Error Login](../screenshots/sequence_login.PNG)
 
 ---
 
