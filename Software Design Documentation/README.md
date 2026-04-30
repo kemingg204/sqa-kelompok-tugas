@@ -24,7 +24,6 @@
 
 ## BAB 2: USE CASE DIAGRAM
 
-![Use Case Diagram](https://i.imgur.com/F4pQhZu.png)
 
 *Gambar 2. Use Case Diagram dengan 4 role (Admin, Manager, Kasir, Staff)*
 
@@ -32,7 +31,7 @@
 
 ## BAB 3: ACTIVITY DIAGRAM (Transaksi Penjualan)
 
-![Screenshot Error Login](../screenshots/Activity Diagram.PNG)
+![Screenshot Error Login](../screenshots/Activity_diagram.png)
 
 *Gambar 3. Activity Diagram Transaksi Cash, Debit, dan QRIS*
 
