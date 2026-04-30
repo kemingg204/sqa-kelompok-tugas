@@ -16,7 +16,7 @@
 
 ## BAB 1: ENTITY RELATIONSHIP DIAGRAM (ERD)
 
-![ERD Diagram](https://i.imgur.com/5qjZ7SM.png)
+![Screenshot Error Login](../screenshots/ERD.png)
 
 *Gambar 1. ERD Sistem Penjualan Kursi CV Rofile Chetose*
 
@@ -24,7 +24,7 @@
 
 ## BAB 2: USE CASE DIAGRAM
 
-
+![Screenshot Error Login](../screenshots/Usecase.png)
 *Gambar 2. Use Case Diagram dengan 4 role (Admin, Manager, Kasir, Staff)*
 
 ---
