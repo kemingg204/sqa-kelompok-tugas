@@ -18,10 +18,10 @@
 | F-09 | Transaksi Debit | TC_Transaksi.md (TC-TR-02) | ✅ Covered |
 | F-10 | Transaksi QRIS | TC_Transaksi.md (TC-TR-03) | ✅ Covered |
 | F-11 | Update Stok Otomatis | TC_Transaksi.md (TC-TR-01, TC-TR-04) | ✅ Covered |
-| F-12 | Riwayat Penjualan | Belum ada test case | ❌ Not Yet |
-| F-13 | Grafik Penjualan | Belum ada test case | ❌ Not Yet |
-| F-14 | Export Excel | Belum ada test case | ❌ Not Yet |
-| F-15 | Export PDF | Belum ada test case | ❌ Not Yet |
+| F-12 | Riwayat Penjualan | TC_Laporan_Grafik.md (TC-LAP-02) | ✅ Covered |
+| F-13 | Grafik Penjualan | TC_Laporan_Grafik.md (TC-LAP-02, TC-LAP-03) | ✅ Covered |
+| F-14 | Export Excel | TC_Laporan_Grafik.md (TC-LAP-07, TC-LAP-09) | ✅ Covered |
+| F-15 | Export PDF | TC_Laporan_Grafik.md (TC-LAP-08, TC-LAP-09) | ✅ Covered |
 
 ---
 
@@ -32,27 +32,27 @@
 | TC_Login.md (TC-01 s/d TC-04) | BUG-001 | Open |
 | TC_Transaksi.md (TC-TR-04) | - | Pending |
 | TC_Transaksi.md (TC-TR-05) | - | Pending |
+| TC_Laporan_Grafik.md (TC-LAP-01) | - | Pending |
+
+---
+
+## Matriks Bug → Requirement
+
+| Bug ID | Requirement Terkait | Status |
+|--------|---------------------|--------|
+| BUG-001 | F-01, F-03 (Login Kasir) | Open |
 
 ---
 
 ## Summary Coverage
 
-| Keterangan | Jumlah |
-|------------|--------|
-| Total Requirement | 15 |
-| Covered | 11 |
-| Not Covered | 4 |
-| **Coverage Percentage** | **73.3%** |
+| Keterangan | Sebelum | Sesudah |
+|------------|---------|---------|
+| Total Requirement | 15 | 15 |
+| Covered | 11 | 15 |
+| Not Covered | 4 | 0 |
+| **Coverage Percentage** | **73.3%** | **100%** |
 
 ---
 
-## Rekomendasi
-
-1. Buat test case untuk requirement F-12 (Riwayat Penjualan)
-2. Buat test case untuk requirement F-13 (Grafik Penjualan)
-3. Buat test case untuk requirement F-14 & F-15 (Export Excel/PDF)
-4. Perbaiki bug BUG-001 (Login kasir gagal)
-
----
-
-**Terakhir diupdate:** 30 April 2026
+## Grafik Coverage
