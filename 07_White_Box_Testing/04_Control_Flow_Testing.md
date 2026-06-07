@@ -13,7 +13,7 @@
 
 ## Flowchart Control Flow
 
-
+![Screenshot Error Login](../screenshots/diagramsave.jpg)
 
 
 
@@ -66,6 +66,10 @@
 ---
 
 ## Lampiran
+![Screenshot Error Login](../screenshots/invalid.png)
+**Gambar 1 transaksi invalid**
+![Screenshot Error Login](../screenshots/marged-image-2026-06-07T10-00-01.png)
+
 
 - **File yang diuji:** `proses_transaksi.php`
 - **Lokasi:** `src/proses_transaksi.php`
