@@ -45,5 +45,6 @@ Semua logika dan nilai variabel (baik valid maupun invalid) berfungsi dengan ben
 
 ---
 ## 6. LAMPIRAN
-![Screenshot Error Login](../screenshots/Activity_diagram.png)
+![Screenshot Error Login](../screenshots//merged-image-2026-06-07T10-00-01.png)
+    **Gambar 1 desk cheking valid**
 
