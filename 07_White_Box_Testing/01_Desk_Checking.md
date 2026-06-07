@@ -42,3 +42,8 @@ Semua logika dan nilai variabel (baik valid maupun invalid) berfungsi dengan ben
 
 **Penguji:** [Nama Anda]
 **Tanggal:** 7 Juni 2026
+
+---
+## 6. LAMPIRAN
+![Screenshot Error Login](../screenshots/Activity_diagram.png)
+
