@@ -68,8 +68,9 @@
 ## Lampiran
 ![Screenshot Error Login](../screenshots/invalid.png)
 **Gambar 1 transaksi invalid**
-![Screenshot Error Login](../screenshots/marged-image-2026-06-07T10-00-01.png)
 
+![Screenshot Error Login](../screenshots/merged-image-2026-06-07T10-00-01.png)
+**Gambar 2 taransakasi valid**
 
 - **File yang diuji:** `proses_transaksi.php`
 - **Lokasi:** `src/proses_transaksi.php`
