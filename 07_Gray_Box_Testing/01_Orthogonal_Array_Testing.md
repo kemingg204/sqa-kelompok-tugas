@@ -33,3 +33,5 @@ Transaksi Penjualan (Metode Pembayaran & Jumlah Item)
 
 ## Kesimpulan
 ✅ Dengan 9 test case, semua kombinasi metode pembayaran dan jumlah item teruji.
+## lampiran
+![Screenshot Error Login](../screenshots/gry.png)
