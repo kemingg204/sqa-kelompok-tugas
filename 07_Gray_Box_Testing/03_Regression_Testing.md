@@ -16,3 +16,7 @@ Menambah Fitur Baru (Metode Pembayaran QRIS)
 
 ## Kesimpulan
 ✅ Fitur QRIS berhasil ditambahkan tanpa merusak fungsionalitas Cash dan Debit.
+## lampiran 
+
+![Screenshot Error Login](../screenshots/abcde.png)
+
