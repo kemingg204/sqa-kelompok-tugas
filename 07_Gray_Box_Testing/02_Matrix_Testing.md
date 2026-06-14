@@ -24,3 +24,5 @@ Pencarian Kursi (Fitur Search)
 
 ## Kesimpulan
 ✅ Pencarian kursi case-insensitive, semua kombinasi berhasil.
+## lampiran
+![Screenshot Error Login](../screenshots/gry2.png)
