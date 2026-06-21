@@ -1,0 +1,16 @@
+# Endurance Testing
+
+**Sesuai Materi:** Endurance testing menyertakan kasus uji yang diulang-ulang dengan kuantitas tertentu untuk menguji program apakah sudah sesuai dengan spesifikasi yang dibutuhkan.
+
+## Skenario Pengujian
+
+| No | Skenario | Pengulangan | Hasil | Status |
+|----|----------|-------------|-------|--------|
+| 1 | Transaksi Cash | 50x | ✅ Stabil | Pass |
+| 2 | Transaksi Debit | 50x | ✅ Stabil | Pass |
+| 3 | Transaksi QRIS | 50x | ✅ Stabil | Pass |
+| 4 | Tambah kursi | 100x | ✅ Stabil | Pass |
+| 5 | Update stok | 100x | ✅ Stabil | Pass |
+
+## Kesimpulan
+✅ Endurance Testing berfungsi dengan baik.
