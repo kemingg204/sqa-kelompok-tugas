@@ -1,0 +1,16 @@
+# Sample Testing
+
+**Sesuai Materi:** Mengambil nilai-nilai yang dipilih dari suatu kelas yang sama, dengan cara mengikutsertakan beberapa nilai yang terpilih dari data input kelas ekivalensi.
+
+## Sample Test Case
+
+| No | Skenario | Input Sample | Expected | Status |
+|----|----------|--------------|----------|--------|
+| 1 | Transaksi 1 item | jumlah=1, cash | ✅ Sukses | Pass |
+| 2 | Transaksi 3 item | jumlah=3, cash | ✅ Sukses | Pass |
+| 3 | Transaksi 5 item | jumlah=5, debit | ✅ Sukses | Pass |
+| 4 | Transaksi 7 item | jumlah=7, qris | ✅ Sukses | Pass |
+| 5 | Stok habis | jumlah=10, cash | ✅ Sukses | Pass |
+
+## Kesimpulan
+✅ Sample Testing berfungsi dengan baik.
